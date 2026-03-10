@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد رمضان - Web Designer & Video Editor</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Arial, sans-serif; background:#f4f4f4; color:#333; line-height:1.6; }
+
+        /* Header */
+        header { background:#1a1a1a; color:#fff; padding:50px 20px; text-align:center; }
+        header h1 { font-size:48px; margin-bottom:10px; }
+        header p { font-size:20px; }
+
+        /* Navigation */
+        nav { display:flex; justify-content:center; background:#333; }
+        nav a { color:#fff; text-decoration:none; padding:15px 20px; display:inline-block; }
+        nav a:hover { background:#007bff; }
+
+        /* Sections */
+        section { padding:60px 20px; max-width:1000px; margin:auto; }
+        h2 { text-align:center; margin-bottom:30px; color:#1a1a1a; }
+        p, li { text-align:center; margin-bottom:10px; }
+
+        /* About Section */
+        .about-list { list-style:none; padding:0; }
+        .about-list li { background:#007bff; color:white; padding:10px; margin:10px auto; width:250px; border-radius:5px; transition:0.3s; cursor:pointer; }
+        .about-list li:hover { background:#0056b3; transform: scale(1.05); }
+
+        /* Services Cards */
+        .services { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+        .card {
+            background: linear-gradient(135deg, #007bff, #00bfff);
+            color:white;
+            padding:20px; 
+            width:250px; 
+            border-radius:10px; 
+            box-shadow:0 6px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor:pointer;
+        }
+        .card:hover { transform: scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,0.5); }
+        .card h3 { margin-bottom:15px; }
+
+        /* Contact Section */
+        .contact { text-align:center; }
+        .contact p { font-weight:bold; margin:10px 0; }
+        .contact a { color:#007bff; text-decoration:none; }
+        .contact a:hover { text-decoration:underline; }
+
+        /* Footer */
+        footer { background:#1a1a1a; color:#fff; text-align:center; padding:20px; }
+
+        @media(max-width:768px){ .services { flex-direction:column; align-items:center; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>محمد رمضان</h1>
+        <p>Web Designer & Video Editor</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <ul class="about-list">
+            <li>Web Designer</li>
+            <li>Can Create Modern Website</li>
+            <li>Simple Website</li>
+            <li>Video Editor</li>
+        </ul>
+        <p>I am passionate about creating modern, responsive, and professional websites, along with high-quality video editing.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Website Design</h3>
+                <p>Creating clean and modern websites that look amazing on any device.</p>
+            </div>
+            <div class="card">
+                <h3>Responsive Development</h3>
+                <p>Websites that function perfectly on mobile, tablet, and desktop devices.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Intuitive and user-friendly interfaces for maximum user engagement.</p>
+            </div>
+            <div class="card">
+                <h3>Video Editing</h3>
+                <p>High-quality video editing to make professional promotional or tutorial videos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <p>Email: <a href="mailto:ramzanmalik560@gmail.com">ramzanmalik560@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/03322040179" target="_blank">03322040179</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 محمد رمضان. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
